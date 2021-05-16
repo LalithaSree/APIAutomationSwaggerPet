@@ -1,0 +1,6 @@
+ApiMethods\DeleteaPet.class
+ApiMethods\AddPet.class
+ApiMethods\FindAPetById.class
+ApiMethods\FindPetsByStatus.class
+ApiMethods\UpdateAnExistingPet.class
+ApiMethods\UpdatePetInStoreWithFormData.class

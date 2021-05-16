@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SwaggerPetAllTests">
+  
+  <test thread-count="2" name="AddPets">
+    <classes>
+   		<class name="ApiMethods.AddPet"/>
+   		 <class name="ApiMethods.FindAPetById"/>
+    </classes>
+  </test>
+  
+  <test thread-count="2" name="UpdateAnExistingPet">
+    <classes>
+   		 <class name="ApiMethods.FindAPetById"/>
+        <class name="ApiMethods.UpdateAnExistingPet"/>
+    </classes>
+  </test>
+  
+  <test thread-count="2" name="UPdatingPetdetailsinStore">
+    <classes>
+   		 <class name="ApiMethods.FindAPetById"/>
+        <class name="ApiMethods.UpdatePetInStoreWithFormData"/>
+    </classes>
+  </test>
+  
+  <test thread-count="2" name="FindPetByStatus">
+    <classes>
+   		 <class name="ApiMethods.FindPetsByStatus"/>
+    </classes>
+  </test>
+  
+  <test thread-count="2" name="DeletePet">
+    <classes>
+   		 <class name="ApiMethods.FindAPetById"/>
+   		 <class name="ApiMethods.DeleteaPet"/>
+    </classes>
+  </test>
+  
+</suite> 
+
